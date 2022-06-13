@@ -32,7 +32,7 @@ const OrderDetails = () => {
     if (!user) {
       setLoggedUser({ isLogged: false });
     } else {
-      setLoggedUser({ isLogged: true });
+      setLoggedUser({ isLogged: true, ...user });
     }
   }, [id])
 
