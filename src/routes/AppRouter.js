@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 import Home from '../containers/Home'
 import LogIn from '../containers/LogIn'
 import CreateAccount from '../containers/CreateAccount'
@@ -16,7 +16,6 @@ import PaymentMethods from '../containers/PaymentMethods'
 import OrderDetails from '../containers/OrderDetails'
 
 const AppRouter = () => {
-
   return (
     <div>
       <BrowserRouter>
