@@ -61,7 +61,7 @@ const CreateAccount = () => {
 
             await Put(`${apiUrl}/${uid}`, newUser);
             localStorage.setItem("user", JSON.stringify({ ...newUser, isLogged: true }));
-            navigate('/');
+            navigate('/food-delivery-app');
         } catch (error) {
             alert(error);
         }

@@ -96,7 +96,7 @@ const LogIn = () => {
 
         if (dbUser) {
             localStorage.setItem("user", JSON.stringify(dbUser));
-            navigate('/');
+            navigate('/food-delivery-app');
             return;
         }
 

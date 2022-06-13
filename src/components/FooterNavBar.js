@@ -24,7 +24,7 @@ const FooterNavBar = ({ user, selected }) => {
           setValue(newValue);
         }}
       >
-        <BottomNavigationAction href='/' label="Home" icon={<HomeOutlinedIcon />} />
+        <BottomNavigationAction href='/food-delivery-app' label="Home" icon={<HomeOutlinedIcon />} />
         <BottomNavigationAction href='/search' label="Search" icon={<SearchOutlinedIcon />} />
         {user && user.isLogged ? (
           <BottomNavigationAction  href='/order' label={"Orders"} icon={<AccessTimeOutlinedIcon />} />

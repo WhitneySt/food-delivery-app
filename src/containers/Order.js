@@ -8,7 +8,7 @@ const Order = () => {
     const navigate = useNavigate();
     return (
         <div>
-            <IconButton onClick={() => navigate('/')} aria-label="delete" sx={{ position: 'absolute', zIndex: '20', width: '30', height: '30', top: 0, left: 0 }}>
+            <IconButton onClick={() => navigate('/food-delivery-app')} aria-label="delete" sx={{ position: 'absolute', zIndex: '20', width: '30', height: '30', top: 0, left: 0 }}>
               <ArrowBackIosIcon sx={{ width: '25', height: '25', marginLeft: 'auto' }} />
             </IconButton>
             <OrderList />

@@ -22,7 +22,7 @@ const AppRouter = () => {
       <BrowserRouter>
         <GlobalStyles />
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/food-delivery-app' element={<Home />} />
           <Route path='/login' element={<LogIn />} />
           <Route path='/createAccount/:uid' element={<CreateAccount />} />
           <Route path='/verification/:phoneNumber' element={<Verification />} />
