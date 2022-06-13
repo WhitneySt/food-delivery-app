@@ -4,9 +4,11 @@ import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+import { useNavigate } from 'react-router-dom';
 
 
 const FooterNavBar = ({ user, selected }) => {
+  const navigate = useNavigate();
   const [value, setValue] = useState(selected);
 
   return (

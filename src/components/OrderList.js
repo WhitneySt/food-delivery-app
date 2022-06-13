@@ -1,9 +1,11 @@
 import { Avatar, List, Skeleton } from 'antd';
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Get from '../helpers/get';
 
 const apiUrl = 'https://crudhook.herokuapp.com';
 const OrderList = () => {
+  const navigate = useNavigate();
   const [initLoading, setInitLoading] = useState(true);
   const [ordersList, setOrdersList] = useState([]);
   const [restaurants, setRestaurants] = useState([]);
