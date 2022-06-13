@@ -24,13 +24,21 @@ const FooterNavBar = ({ user, selected }) => {
           setValue(newValue);
         }}
       >
-        <BottomNavigationAction href='/food-delivery-app' label="Home" icon={<HomeOutlinedIcon />} />
-        <BottomNavigationAction href='/search' label="Search" icon={<SearchOutlinedIcon />} />
+        <BottomNavigationAction  onClick={() => {
+          navigate(`/food-delivery-app`);
+        }} label="Home" icon={<HomeOutlinedIcon />} />
+        <BottomNavigationAction onClick={() => {
+          navigate(`/search`);
+        }} label="Search" icon={<SearchOutlinedIcon />} />
         {user && user.isLogged ? (
-          <BottomNavigationAction  href='/order' label={"Orders"} icon={<AccessTimeOutlinedIcon />} />
+          <BottomNavigationAction onClick={() => {
+            navigate(`/order`);
+          }} label={"Orders"} icon={<AccessTimeOutlinedIcon />} />
         ) : null}
         {user && user.isLogged ? (
-          <BottomNavigationAction  href='/profile' label={"Profile"} icon={<PersonOutlineOutlinedIcon />} />
+          <BottomNavigationAction onClick={() => {
+            navigate(`/profile`);
+          }} label={"Profile"} icon={<PersonOutlineOutlinedIcon />} />
         ) : null}
       </BottomNavigation>
     </div>

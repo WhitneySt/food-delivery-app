@@ -41,7 +41,9 @@ const OrderList = () => {
               <Skeleton avatar title={false} loading={false} active>
                 <List.Item.Meta
                   avatar={<Avatar src={restaurant ? restaurant.logo : ''} />}
-                  title={<a href={`/order/${item.id}`}>{restaurant ? restaurant.name : ''}</a>}
+                  title={<a onClick={() => {
+                    navigate(`/order/${item.id}`);
+                  }}>{restaurant ? restaurant.name : ''}</a>}
                   description={`$${item.price.toLocaleString()}`}
                 />
               </Skeleton>

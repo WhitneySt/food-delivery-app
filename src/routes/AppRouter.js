@@ -34,7 +34,7 @@ const AppRouter = () => {
           <Route path='/order' element={<Order />} />
           <Route path='/order/:id' element={<OrderDetails />} />
           <Route path='/payment' element={<Payment />} />
-          <Route path='*' element={<Home />} />
+          <Route path='*' element={<Navigate to={"/food-delivery-app"}/>}/>
         </Routes>
       </BrowserRouter>
     </div>

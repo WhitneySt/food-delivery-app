@@ -109,7 +109,9 @@ const OrderDetails = () => {
               <Skeleton avatar title={false} loading={initLoading} active>
                 <List.Item.Meta
                   avatar={<Avatar src={order ? order.image : ''} />}
-                  title={<a href={`/order/${item.id}`}>{item ? item.name : ''}</a>}
+                  title={<a onClick={() => {
+                    navigate(`/order/${item.id}`);
+                  }}>{item ? item.name : ''}</a>}
                 />
               </Skeleton>
             </List.Item>
